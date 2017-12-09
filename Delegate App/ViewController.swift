@@ -10,16 +10,34 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textField1: UITextField!
+    @IBOutlet weak var textField2: UITextField!
+    @IBOutlet weak var textField3: UITextField!
+    @IBOutlet weak var onOff: UISwitch!
+    
+    // MARK: Text Field Delegate objects
+    let zipDelegate = ZipCodeTextFieldDelegate()
+    let moneyDelegate = MoneyTextFieldDelegate()
+    let editDelegate = EditTextFieldDelegate()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //Which text field is connected to which delegate
+        self.textField1.delegate = zipDelegate
+        self.textField2.delegate = moneyDelegate
+        self.textField3.delegate = editDelegate
+        
+        //Turning off the on switch
+        onOff.isOn = false
+        
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    @IBAction func offOnSwitch(_ sender: Any) {
     }
-
-
+    
 }
 

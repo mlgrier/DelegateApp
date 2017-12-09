@@ -12,6 +12,9 @@
 		31975FCB1FDC757200741813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31975FC91FDC757200741813 /* Main.storyboard */; };
 		31975FCD1FDC757200741813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31975FCC1FDC757200741813 /* Assets.xcassets */; };
 		31975FD01FDC757200741813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31975FCE1FDC757200741813 /* LaunchScreen.storyboard */; };
+		31975FD81FDC773900741813 /* ZipCodeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31975FD71FDC773900741813 /* ZipCodeDelegate.swift */; };
+		31975FDA1FDC775900741813 /* MoneyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31975FD91FDC775900741813 /* MoneyDelegate.swift */; };
+		31975FDC1FDC777600741813 /* EditDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31975FDB1FDC777600741813 /* EditDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		31975FCC1FDC757200741813 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31975FCF1FDC757200741813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31975FD11FDC757200741813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31975FD71FDC773900741813 /* ZipCodeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodeDelegate.swift; sourceTree = "<group>"; };
+		31975FD91FDC775900741813 /* MoneyDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyDelegate.swift; sourceTree = "<group>"; };
+		31975FDB1FDC777600741813 /* EditDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +63,22 @@
 				31975FC51FDC757200741813 /* AppDelegate.swift */,
 				31975FC71FDC757200741813 /* ViewController.swift */,
 				31975FC91FDC757200741813 /* Main.storyboard */,
+				31975FDD1FDC778300741813 /* Delegates */,
 				31975FCC1FDC757200741813 /* Assets.xcassets */,
 				31975FCE1FDC757200741813 /* LaunchScreen.storyboard */,
 				31975FD11FDC757200741813 /* Info.plist */,
 			);
 			path = "Delegate App";
+			sourceTree = "<group>";
+		};
+		31975FDD1FDC778300741813 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				31975FD71FDC773900741813 /* ZipCodeDelegate.swift */,
+				31975FD91FDC775900741813 /* MoneyDelegate.swift */,
+				31975FDB1FDC777600741813 /* EditDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +154,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				31975FC81FDC757200741813 /* ViewController.swift in Sources */,
+				31975FDA1FDC775900741813 /* MoneyDelegate.swift in Sources */,
+				31975FDC1FDC777600741813 /* EditDelegate.swift in Sources */,
+				31975FD81FDC773900741813 /* ZipCodeDelegate.swift in Sources */,
 				31975FC61FDC757200741813 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
